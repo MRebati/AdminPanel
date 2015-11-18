@@ -1,0 +1,36 @@
+@import url(../../../fonts/IRYekan.ttf);
+@import url(../../../fonts/XTX-FNT-XEROSANS-BLACK.woff);
+@import url(../../../fonts/XTX-FNT-XEROSANS-BOLD.woff);
+@import url(../../../fonts/IRANSans-web.woff);
+
+@font-face {
+  font-family: 'segoeui';
+  font-style: normal;
+  font-weight: 200;
+  src: local('segoeui'), local('segoeui'), url(../../../fonts/segoeui.ttf) format('ttf');
+}
+@font-face {
+  font-family: 'XTX-BOLD';
+  font-style: normal;
+  font-weight: 600;
+  src: local('XTX-FNT-XEROSANS-BOLD'), local('XTX-FNT-XEROSANS-BOLD'), url(../../../fonts/XTX-FNT-XEROSANS-BOLD.woff) format('woff');
+}
+@font-face {
+  font-family: 'XTX-BLACK';
+  font-style: normal;
+  font-weight: 800;
+  src: local('XTX-FNT-XEROSANS-BLACK'), local('XTX-FNT-XEROSANS-BLACK'), url(../../../fonts/XTX-FNT-XEROSANS-BLACK.woff) format('woff');
+}
+@font-face {
+  font-family: 'IRYekan';
+  font-style: normal;
+  font-weight: 800;
+  src: local('IRYekan'), local('IRYekan'), url(../../../fonts/IRYekan.ttf) format('ttf');
+}
+
+@font-face {
+  font-family: 'IRANSans';
+  font-style: normal;
+  font-weight: 200;
+  src: local('IRANSans-web'), local('IRANSans-web'), url(../../../fonts/IRANSans-web.woff) format('woff');
+}
