@@ -1,0 +1,90 @@
+aside{
+  float:right;
+  font: $asideFont;
+  background: rgba(0,0,0,0.7);
+  height: 100%;
+  width:15%;
+  i.fa-icon{
+      padding-left:5px;
+    }//i.fa-icon
+  a{
+    color:$light;
+    text-decoration: none;
+  }//a
+  .aside-top{
+    background: rgba(0,0,0,0.75);
+    height:66px;
+    padding: 10px;
+    .avatar{
+      img{
+        border-radius: 50%;
+        width:45px;
+        height:45px;
+        float:right;
+      }//img
+    }//.avatar
+    .details{
+      float:right;
+      padding-right:10px;
+      width:auto;
+      .username{
+        font-size: 1em;
+        clear:both;
+        margin-bottom:10px;
+      }//.username
+      .signout{
+        font-size: 0.6em;
+        float:left;
+      }//.signout
+      .viewsite{
+        float:right;
+        font-size: 0.6em;
+        margin-left:10px;
+      }//.viewsite
+    }//.details
+  }//.aside-top
+  ul{
+    margin-top:2px;
+    li{
+      width:100%;
+      background: rgba(0,0,0,0.4);
+      margin-bottom:2px;
+      transition: all ease 0.3s;
+      
+      a{
+        width:100%;
+        padding:10px;
+        display: block;
+          i{
+            margin-left:10px;
+          }//i
+        }//a
+      &:hover{
+        background:rgba(0,0,0,0.5);
+        a{
+          color:darken($light,10);
+        }//a
+      }//:hover
+      &.active{
+        background:rgba(0,0,0,0.5);
+        a{
+          color: darken($light,10);
+          cursor: default;
+        }//a
+      }//.active
+      small{
+        border-bottom: 8px solid transparent;
+        border-left: 8px solid #f6f6f6;
+        border-top: 8px solid transparent;
+        content: "";
+        display: block;
+        float: left;
+        height: 0;
+        position: relative;
+        right: 0;
+        top: 12px;
+        width: 0;
+      }//small
+    }//li
+  }//ul
+}//aside

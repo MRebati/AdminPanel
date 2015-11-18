@@ -9,14 +9,10 @@
 @import 'compass/css3/filter';
 @import "compass/css3/flexbox";
 @import "compass/css3/transition";
-@import "compass/bootstrap-sass";
+
 //External Libraries
 @import "susy";
 @import "breakpoint";
-@import "font-awesome/font-awesome";
-
-//Initializing Susy
-@include layout($susy float inside);
 
 //Core Partial
 @import "variables";
@@ -30,3 +26,8 @@
 @import "modules/main";
 @import "modules/sidebar";
 @import "modules/bottom";
+@import "fonts";
+@import "font-awesome/font-awesome";
+
+//Initializing Susy
+@include layout($susy float inside);
