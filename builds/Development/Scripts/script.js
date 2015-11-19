@@ -45,7 +45,8 @@ $('#menu-icon').click(function(e){
   'use strict';
   e.preventDefault();
   var container = $('container');
-  $('aside').animate({width:'toggle'},350);
+  $('aside').toggleClass('collapse',350);
+  $('aside > .details').fadeToggle();
   $('.container').toggleClass('full-width',350);
 });
 

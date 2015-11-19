@@ -158,7 +158,7 @@ body {
 
 /* line 15, ../../../../../components/sass/_layout.scss */
 .full-width {
-  width: 100% !important;
+  width: 95% !important;
   display: block;
   transition: all ease 0.5s;
 }
@@ -200,46 +200,51 @@ header {
   width: 100%;
   background: rgba(0, 0, 0, 0.3);
   height: 66px;
-  padding: 10px;
 }
-/* line 8, ../../../../../components/sass/modules/_top.scss */
+/* line 7, ../../../../../components/sass/modules/_top.scss */
 header .menu-icon {
-  padding: 5px;
+  height: 100%;
+  width: 40px;
   float: right;
   color: #FFFFFF;
 }
-/* line 12, ../../../../../components/sass/modules/_top.scss */
+/* line 14, ../../../../../components/sass/modules/_top.scss */
 header .menu-icon a {
+  background: rgba(0, 0, 0, 0.1);
+  line-height: 4em;
+  padding: 23px 13px;
+  height: 100%;
   color: #FFFFFF;
 }
-/* line 14, ../../../../../components/sass/modules/_top.scss */
+/* line 20, ../../../../../components/sass/modules/_top.scss */
 header .menu-icon a:hover {
+  background: rgba(0, 0, 0, 0.2);
   color: #e6e6e6;
 }
-/* line 19, ../../../../../components/sass/modules/_top.scss */
+/* line 26, ../../../../../components/sass/modules/_top.scss */
 header .title {
   float: right;
   font: 400 1em/1.2em "XTX-BOLD", "XTX-BLACK", segoeui;
   font-size: 1.4em;
-  padding: 5px;
+  padding: 15px;
   color: #FFFFFF;
 }
-/* line 26, ../../../../../components/sass/modules/_top.scss */
+/* line 33, ../../../../../components/sass/modules/_top.scss */
 header .breadcrump {
   float: left;
 }
-/* line 28, ../../../../../components/sass/modules/_top.scss */
+/* line 35, ../../../../../components/sass/modules/_top.scss */
 header .breadcrump ul {
   list-style: none;
-  padding-top: 15px;
+  padding-top: 25px;
 }
-/* line 31, ../../../../../components/sass/modules/_top.scss */
+/* line 38, ../../../../../components/sass/modules/_top.scss */
 header .breadcrump ul li {
   font: 200 0.8em/1.2em "XTX-BOLD", "XTX-BLACK", segoeui;
   color: #FFFFFF;
   float: left;
 }
-/* line 35, ../../../../../components/sass/modules/_top.scss */
+/* line 42, ../../../../../components/sass/modules/_top.scss */
 header .breadcrump ul li a {
   color: #FFFFFF;
   text-decoration: none;
@@ -272,144 +277,290 @@ section.content .row:after {
 .box {
   background: #FFFFFF;
   border-radius: 3px;
-  box-shadow: 0 1px 5px 1px #e9e9e9;
+  border: 1px solid #efefef;
   margin-bottom: 15px;
 }
 /* line 17, ../../../../../components/sass/modules/_main.scss */
 .box .box-header {
-  border-bottom: 1px solid #eee;
   padding: 10px;
 }
-/* line 20, ../../../../../components/sass/modules/_main.scss */
+/* line 19, ../../../../../components/sass/modules/_main.scss */
+.box .box-header.with-border {
+  border-bottom: 1px solid #efefef;
+}
+/* line 22, ../../../../../components/sass/modules/_main.scss */
 .box .box-header .box-title {
   font-size: 1em;
   color: #999;
 }
-/* line 26, ../../../../../components/sass/modules/_main.scss */
+/* line 28, ../../../../../components/sass/modules/_main.scss */
 .box .box-body {
+  font: "XTX-BOLD", "XTX-BLACK", segoeui;
   padding: 10px;
 }
-/* line 28, ../../../../../components/sass/modules/_main.scss */
+/* line 31, ../../../../../components/sass/modules/_main.scss */
 .box .box-body.no-padding {
   padding: 0 !important;
+}
+/* line 36, ../../../../../components/sass/modules/_main.scss */
+.box .box-footer {
+  padding: 10px;
+  border-top: 1px solid #efefef;
+  font-size: 1em;
+  color: #444;
+}
+/* line 41, ../../../../../components/sass/modules/_main.scss */
+.box .box-footer a {
+  color: #444;
+  text-decoration: none;
+}
+/* line 44, ../../../../../components/sass/modules/_main.scss */
+.box .box-footer a:hover {
+  color: #666;
+  text-decoration: none;
+}
+
+/* line 52, ../../../../../components/sass/modules/_main.scss */
+.no-padding {
+  padding: 0 !important;
+}
+
+/* line 56, ../../../../../components/sass/modules/_main.scss */
+.text-center {
+  text-align: center;
+  margin: 0 auto;
+  position: relative;
 }
 
 /* line 1, ../../../../../components/sass/modules/_sidebar.scss */
 aside {
+  white-space: nowrap;
   float: right;
   font: 400 1em/1.2em "XTX-BOLD", "XTX-BLACK", segoeui;
   background: rgba(0, 0, 0, 0.7);
   height: 100%;
   width: 15%;
+  transition: all ease 0.5s;
 }
-/* line 7, ../../../../../components/sass/modules/_sidebar.scss */
+/* line 8, ../../../../../components/sass/modules/_sidebar.scss */
 aside i.fa-icon {
   padding-left: 5px;
 }
-/* line 10, ../../../../../components/sass/modules/_sidebar.scss */
+/* line 11, ../../../../../components/sass/modules/_sidebar.scss */
 aside a {
   color: #FFFFFF;
   text-decoration: none;
 }
-/* line 14, ../../../../../components/sass/modules/_sidebar.scss */
+/* line 15, ../../../../../components/sass/modules/_sidebar.scss */
 aside .aside-top {
+  white-space: nowrap;
   background: rgba(0, 0, 0, 0.75);
   height: 66px;
   padding: 10px;
 }
-/* line 19, ../../../../../components/sass/modules/_sidebar.scss */
+/* line 20, ../../../../../components/sass/modules/_sidebar.scss */
+aside .aside-top .avatar {
+  white-space: nowrap;
+}
+/* line 22, ../../../../../components/sass/modules/_sidebar.scss */
 aside .aside-top .avatar img {
   border-radius: 50%;
   width: 45px;
   height: 45px;
   float: right;
 }
-/* line 26, ../../../../../components/sass/modules/_sidebar.scss */
+/* line 29, ../../../../../components/sass/modules/_sidebar.scss */
 aside .aside-top .details {
+  white-space: nowrap;
   float: right;
   padding-right: 10px;
   width: auto;
 }
-/* line 30, ../../../../../components/sass/modules/_sidebar.scss */
+/* line 34, ../../../../../components/sass/modules/_sidebar.scss */
 aside .aside-top .details .username {
   font-size: 1em;
   clear: both;
   margin-bottom: 10px;
 }
-/* line 35, ../../../../../components/sass/modules/_sidebar.scss */
+/* line 38, ../../../../../components/sass/modules/_sidebar.scss */
+aside .aside-top .details .username a {
+  text-decoration: none;
+}
+/* line 40, ../../../../../components/sass/modules/_sidebar.scss */
+aside .aside-top .details .username a:hover {
+  color: #FFFFFF;
+  text-decoration: noen;
+}
+/* line 46, ../../../../../components/sass/modules/_sidebar.scss */
 aside .aside-top .details .signout {
   font-size: 0.6em;
   float: left;
 }
-/* line 38, ../../../../../components/sass/modules/_sidebar.scss */
+/* line 49, ../../../../../components/sass/modules/_sidebar.scss */
 aside .aside-top .details .signout a:hover {
   color: #e6e6e6;
   text-decoration: none;
 }
-/* line 42, ../../../../../components/sass/modules/_sidebar.scss */
+/* line 53, ../../../../../components/sass/modules/_sidebar.scss */
 aside .aside-top .details .signout a:after {
   color: #cccccc;
 }
-/* line 46, ../../../../../components/sass/modules/_sidebar.scss */
+/* line 57, ../../../../../components/sass/modules/_sidebar.scss */
 aside .aside-top .details .viewsite {
   float: right;
   font-size: 0.6em;
   margin-left: 10px;
 }
-/* line 50, ../../../../../components/sass/modules/_sidebar.scss */
+/* line 61, ../../../../../components/sass/modules/_sidebar.scss */
 aside .aside-top .details .viewsite a:hover {
   color: #e6e6e6;
   text-decoration: none;
 }
-/* line 54, ../../../../../components/sass/modules/_sidebar.scss */
+/* line 65, ../../../../../components/sass/modules/_sidebar.scss */
 aside .aside-top .details .viewsite a:after {
   color: #cccccc;
 }
-/* line 60, ../../../../../components/sass/modules/_sidebar.scss */
+/* line 71, ../../../../../components/sass/modules/_sidebar.scss */
 aside ul {
   margin-top: 2px;
+  white-space: nowrap;
 }
-/* line 62, ../../../../../components/sass/modules/_sidebar.scss */
+/* line 74, ../../../../../components/sass/modules/_sidebar.scss */
 aside ul li {
+  white-space: nowrap;
   width: 100%;
   background: rgba(0, 0, 0, 0.4);
   margin-bottom: 2px;
   transition: all ease 0.3s;
 }
-/* line 68, ../../../../../components/sass/modules/_sidebar.scss */
+/* line 81, ../../../../../components/sass/modules/_sidebar.scss */
 aside ul li a {
   width: 100%;
   padding: 10px;
   display: block;
   text-decoration: none;
 }
-/* line 73, ../../../../../components/sass/modules/_sidebar.scss */
+/* line 86, ../../../../../components/sass/modules/_sidebar.scss */
 aside ul li a i {
   margin-left: 10px;
 }
-/* line 76, ../../../../../components/sass/modules/_sidebar.scss */
+/* line 89, ../../../../../components/sass/modules/_sidebar.scss */
 aside ul li a:hover {
   text-decoration: none;
 }
-/* line 80, ../../../../../components/sass/modules/_sidebar.scss */
+/* line 93, ../../../../../components/sass/modules/_sidebar.scss */
 aside ul li:hover {
   background: rgba(0, 0, 0, 0.5);
 }
-/* line 82, ../../../../../components/sass/modules/_sidebar.scss */
+/* line 95, ../../../../../components/sass/modules/_sidebar.scss */
 aside ul li:hover a {
   color: #e6e6e6;
 }
-/* line 86, ../../../../../components/sass/modules/_sidebar.scss */
+/* line 99, ../../../../../components/sass/modules/_sidebar.scss */
 aside ul li.active {
   background: rgba(0, 0, 0, 0.5);
 }
-/* line 88, ../../../../../components/sass/modules/_sidebar.scss */
+/* line 101, ../../../../../components/sass/modules/_sidebar.scss */
 aside ul li.active a {
   color: #e6e6e6;
   cursor: default;
 }
-/* line 93, ../../../../../components/sass/modules/_sidebar.scss */
+/* line 106, ../../../../../components/sass/modules/_sidebar.scss */
 aside ul li small {
+  border-bottom: 8px solid transparent;
+  border-left: 8px solid #f6f6f6;
+  border-top: 8px solid transparent;
+  content: "";
+  display: block;
+  float: left;
+  height: 0;
+  position: relative;
+  right: 0;
+  top: 12px;
+  width: 0;
+}
+/* line 124, ../../../../../components/sass/modules/_sidebar.scss */
+aside.collapse {
+  white-space: nowrap;
+  display: block;
+  float: right;
+  font: 400 1em/1.2em "XTX-BOLD", "XTX-BLACK", segoeui;
+  background: rgba(0, 0, 0, 0.7);
+  height: 100%;
+  width: 5%;
+}
+/* line 132, ../../../../../components/sass/modules/_sidebar.scss */
+aside.collapse i.fa-icon {
+  padding-left: 5px;
+}
+/* line 135, ../../../../../components/sass/modules/_sidebar.scss */
+aside.collapse a {
+  color: #FFFFFF;
+  text-decoration: none;
+}
+/* line 139, ../../../../../components/sass/modules/_sidebar.scss */
+aside.collapse .aside-top {
+  background: rgba(0, 0, 0, 0.75);
+  height: 66px;
+  padding: 10px;
+}
+/* line 144, ../../../../../components/sass/modules/_sidebar.scss */
+aside.collapse .aside-top .avatar img {
+  border-radius: 50%;
+  width: 45px;
+  height: 45px;
+  float: right;
+}
+/* line 151, ../../../../../components/sass/modules/_sidebar.scss */
+aside.collapse .aside-top .details {
+  display: none;
+}
+/* line 155, ../../../../../components/sass/modules/_sidebar.scss */
+aside.collapse ul {
+  margin-top: 2px;
+}
+/* line 157, ../../../../../components/sass/modules/_sidebar.scss */
+aside.collapse ul li {
+  width: 100%;
+  background: rgba(0, 0, 0, 0.4);
+  margin-bottom: 2px;
+  transition: all ease 0.3s;
+}
+/* line 163, ../../../../../components/sass/modules/_sidebar.scss */
+aside.collapse ul li a {
+  width: 100%;
+  font-size: 1.4em;
+  padding: 10px 20px;
+  display: block;
+  text-decoration: none;
+}
+/* line 169, ../../../../../components/sass/modules/_sidebar.scss */
+aside.collapse ul li a span {
+  display: none;
+}
+/* line 172, ../../../../../components/sass/modules/_sidebar.scss */
+aside.collapse ul li a:hover {
+  text-decoration: none;
+}
+/* line 176, ../../../../../components/sass/modules/_sidebar.scss */
+aside.collapse ul li:hover {
+  background: rgba(0, 0, 0, 0.5);
+}
+/* line 178, ../../../../../components/sass/modules/_sidebar.scss */
+aside.collapse ul li:hover a {
+  color: #e6e6e6;
+}
+/* line 182, ../../../../../components/sass/modules/_sidebar.scss */
+aside.collapse ul li.active {
+  background: rgba(0, 0, 0, 0.5);
+}
+/* line 184, ../../../../../components/sass/modules/_sidebar.scss */
+aside.collapse ul li.active a {
+  color: #e6e6e6;
+  cursor: default;
+}
+/* line 189, ../../../../../components/sass/modules/_sidebar.scss */
+aside.collapse ul li small {
   border-bottom: 8px solid transparent;
   border-left: 8px solid #f6f6f6;
   border-top: 8px solid transparent;

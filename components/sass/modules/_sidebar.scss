@@ -1,4 +1,5 @@
 aside{
+  white-space: nowrap;
   float:right;
   font: $asideFont;
   background: rgba(0,0,0,0.7);
@@ -12,10 +13,12 @@ aside{
     text-decoration: none;
   }//a
   .aside-top{
+    white-space: nowrap;
     background: rgba(0,0,0,0.75);
     height:66px;
     padding: 10px;
     .avatar{
+      white-space: nowrap;
       img{
         border-radius: 50%;
         width:45px;
@@ -24,6 +27,7 @@ aside{
       }//img
     }//.avatar
     .details{
+      white-space: nowrap;
       float:right;
       padding-right:10px;
       width:auto;
@@ -31,6 +35,13 @@ aside{
         font-size: 1em;
         clear:both;
         margin-bottom:10px;
+        a{
+          text-decoration:none;
+          &:hover{
+            color: $light;
+            text-decoration: noen; 
+          }
+        }
       }//.username
       .signout{
         font-size: 0.6em;
@@ -59,7 +70,9 @@ aside{
   }//.aside-top
   ul{
     margin-top:2px;
+    white-space: nowrap;
     li{
+      white-space: nowrap;
       width:100%;
       background: rgba(0,0,0,0.4);
       margin-bottom:2px;
@@ -105,4 +118,88 @@ aside{
       }//small
     }//li
   }//ul
+
+  transition: all ease 0.5s;
+
+  &.collapse{
+    white-space: nowrap;
+    display: block;
+    float:right;
+    font: $asideFont;
+    background: rgba(0,0,0,0.7);
+    height: 100%;
+    width:5%;
+    i.fa-icon{
+        padding-left:5px;
+      }//i.fa-icon
+    a{
+      color:$light;
+      text-decoration: none;
+    }//a
+    .aside-top{
+      background: rgba(0,0,0,0.75);
+      height:66px;
+      padding: 10px;
+      .avatar{
+        img{
+          border-radius: 50%;
+          width:45px;
+          height:45px;
+          float:right;
+        }//img
+      }//.avatar
+      .details{
+        display: none;
+      }//.details
+    }//.aside-top
+    ul{
+      margin-top:2px;
+      li{
+        width:100%;
+        background: rgba(0,0,0,0.4);
+        margin-bottom:2px;
+        transition: all ease 0.3s;
+        
+        a{
+          width:100%;
+          font-size: 1.4em;
+          padding: 10px 20px;
+          display: block;
+          text-decoration: none;
+            span{
+              display: none;
+            }
+            &:hover{
+              text-decoration:none;
+            }
+          }//a
+        &:hover{
+          background:rgba(0,0,0,0.5);
+          a{
+            color:darken($light,10);
+          }//a
+        }//:hover
+        &.active{
+          background:rgba(0,0,0,0.5);
+          a{
+            color: darken($light,10);
+            cursor: default;
+          }//a
+        }//.active
+        small{
+          border-bottom: 8px solid transparent;
+          border-left: 8px solid #f6f6f6;
+          border-top: 8px solid transparent;
+          content: "";
+          display: block;
+          float: left;
+          height: 0;
+          position: relative;
+          right: 0;
+          top: 12px;
+          width: 0;
+        }//small
+      }//li
+  }//ul
+  }//.colapse
 }//aside

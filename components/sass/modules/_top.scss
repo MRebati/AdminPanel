@@ -4,14 +4,21 @@ header{
   width:100%;
   background: rgba(0,0,0,0.3);
   height:66px;
-  padding:10px;
   .menu-icon{
-    padding:5px;
+    
+    height:100%;
+    width:40px;
+    
     float:right;
     color:$light;
     a{
+      background:rgba(0,0,0,0.1);
+      line-height: 4em;
+      padding: 23px 13px;
+      height:100%;
       color: $light;
       &:hover{
+        background:rgba(0,0,0,0.2);
         color: darken($light,10);
       }
     }
@@ -20,14 +27,14 @@ header{
     float:right;
     font: $asideFont;
     font-size: 1.4em;
-    padding:5px;
+    padding:15px;
     color:$light;
   }//.title
   .breadcrump{
     float:left;
     ul{
       list-style: none;
-      padding-top:15px;
+      padding-top:25px;
       li{
         font: $navFont;
           color:$light;
