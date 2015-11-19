@@ -31,6 +31,8 @@ if (env==='development') {
 
 jsSources = [
   'components/scripts/jqloader.js',
+  'components/scripts/jquery-ui.js',
+  'components/scripts/bootstrap.min.js',
   'components/scripts/TweenMax.min.js',
   'components/scripts/jquery.scrollmagic.min.js',
   'components/scripts/script.js',

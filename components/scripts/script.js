@@ -1,36 +1,9 @@
-$(document).ready(function(){
+$('#menu-icon').click(function(e){
   'use strict';
-  $('#questions').niceScroll();
-});
-
-$(function(){
-  'use strict';
-  $('#questions').niceScroll();
-});
-
-$('.nav-icon').first().click(function(){
-  'use strict';
-  var ul = $('.nav-bar > ul');
-  if(ul.hasClass('nav-clicked')){
-    ul.slideUp(function(){
-      ul.removeClass('nav-clicked');
-    });
-  }else{
-    ul.addClass('nav-clicked').slideDown();
-  }
-});
-
-$(window).resize(function(){
-  'use strict';
-  var width = $(window).width();
-  if(width > 650){
-    $('.nav-icon').hide();
-    $('.nav-bar > ul').removeClass('nav-clicked').show();
-  }
-  if(width <= 650){
-    $('.nav-icon').show();
-    $('.nav-bar > ul').hide();
-  }
+  e.preventDefault();
+  var container = $('container');
+  $('aside').animate({width:'toggle'},350);
+  $('.container').toggleClass('full-width',350);
 });
 
 $(window).scroll(function () {

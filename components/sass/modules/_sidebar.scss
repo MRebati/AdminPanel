@@ -35,11 +35,25 @@ aside{
       .signout{
         font-size: 0.6em;
         float:left;
+        a:hover{
+          color: darken($light,10);
+          text-decoration:none;
+        }
+        a:after{
+          color: darken($light,20);
+        }
       }//.signout
       .viewsite{
         float:right;
         font-size: 0.6em;
         margin-left:10px;
+        a:hover{
+          color: darken($light,10);
+          text-decoration:none;
+        }
+        a:after{
+          color: darken($light,20);
+        }
       }//.viewsite
     }//.details
   }//.aside-top
@@ -55,9 +69,13 @@ aside{
         width:100%;
         padding:10px;
         display: block;
+        text-decoration: none;
           i{
             margin-left:10px;
           }//i
+          &:hover{
+            text-decoration:none;
+          }
         }//a
       &:hover{
         background:rgba(0,0,0,0.5);

@@ -148,6 +148,21 @@ body {
   height: 100%;
 }
 
+/* line 8, ../../../../../components/sass/_layout.scss */
+.container {
+  float: left;
+  width: 85% !important;
+  padding: 0 !important;
+  transition: all ease 0.5s;
+}
+
+/* line 15, ../../../../../components/sass/_layout.scss */
+.full-width {
+  width: 100% !important;
+  display: block;
+  transition: all ease 0.5s;
+}
+
 @font-face {
   font-family: 'segoeui';
   font-style: normal;
@@ -182,12 +197,26 @@ body {
 header {
   float: right;
   display: inline-block;
-  width: 85%;
+  width: 100%;
   background: rgba(0, 0, 0, 0.3);
   height: 66px;
   padding: 10px;
 }
 /* line 8, ../../../../../components/sass/modules/_top.scss */
+header .menu-icon {
+  padding: 5px;
+  float: right;
+  color: #FFFFFF;
+}
+/* line 12, ../../../../../components/sass/modules/_top.scss */
+header .menu-icon a {
+  color: #FFFFFF;
+}
+/* line 14, ../../../../../components/sass/modules/_top.scss */
+header .menu-icon a:hover {
+  color: #e6e6e6;
+}
+/* line 19, ../../../../../components/sass/modules/_top.scss */
 header .title {
   float: right;
   font: 400 1em/1.2em "XTX-BOLD", "XTX-BLACK", segoeui;
@@ -195,28 +224,74 @@ header .title {
   padding: 5px;
   color: #FFFFFF;
 }
-/* line 15, ../../../../../components/sass/modules/_top.scss */
+/* line 26, ../../../../../components/sass/modules/_top.scss */
 header .breadcrump {
   float: left;
 }
-/* line 17, ../../../../../components/sass/modules/_top.scss */
+/* line 28, ../../../../../components/sass/modules/_top.scss */
 header .breadcrump ul {
   list-style: none;
   padding-top: 15px;
 }
-/* line 20, ../../../../../components/sass/modules/_top.scss */
+/* line 31, ../../../../../components/sass/modules/_top.scss */
 header .breadcrump ul li {
   font: 200 0.8em/1.2em "XTX-BOLD", "XTX-BLACK", segoeui;
   color: #FFFFFF;
   float: left;
 }
-/* line 24, ../../../../../components/sass/modules/_top.scss */
+/* line 35, ../../../../../components/sass/modules/_top.scss */
 header .breadcrump ul li a {
   color: #FFFFFF;
   text-decoration: none;
   width: 100px;
   padding-right: 10px;
   padding-left: 10px;
+}
+
+/* line 1, ../../../../../components/sass/modules/_main.scss */
+section.content {
+  width: 100%;
+  min-height: 10px;
+  float: left;
+  margin-top: 15px;
+}
+/* line 6, ../../../../../components/sass/modules/_main.scss */
+section.content .row {
+  max-width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+}
+/* line 12, C:/Ruby22/lib/ruby/gems/2.2.0/gems/susy-2.2.6/sass/susy/output/support/_clearfix.scss */
+section.content .row:after {
+  content: " ";
+  display: block;
+  clear: both;
+}
+
+/* line 11, ../../../../../components/sass/modules/_main.scss */
+.box {
+  background: #FFFFFF;
+  border-radius: 3px;
+  box-shadow: 0 1px 5px 1px #e9e9e9;
+  margin-bottom: 15px;
+}
+/* line 17, ../../../../../components/sass/modules/_main.scss */
+.box .box-header {
+  border-bottom: 1px solid #eee;
+  padding: 10px;
+}
+/* line 20, ../../../../../components/sass/modules/_main.scss */
+.box .box-header .box-title {
+  font-size: 1em;
+  color: #999;
+}
+/* line 26, ../../../../../components/sass/modules/_main.scss */
+.box .box-body {
+  padding: 10px;
+}
+/* line 28, ../../../../../components/sass/modules/_main.scss */
+.box .box-body.no-padding {
+  padding: 0 !important;
 }
 
 /* line 1, ../../../../../components/sass/modules/_sidebar.scss */
@@ -266,51 +341,74 @@ aside .aside-top .details .signout {
   font-size: 0.6em;
   float: left;
 }
-/* line 39, ../../../../../components/sass/modules/_sidebar.scss */
+/* line 38, ../../../../../components/sass/modules/_sidebar.scss */
+aside .aside-top .details .signout a:hover {
+  color: #e6e6e6;
+  text-decoration: none;
+}
+/* line 42, ../../../../../components/sass/modules/_sidebar.scss */
+aside .aside-top .details .signout a:after {
+  color: #cccccc;
+}
+/* line 46, ../../../../../components/sass/modules/_sidebar.scss */
 aside .aside-top .details .viewsite {
   float: right;
   font-size: 0.6em;
   margin-left: 10px;
 }
-/* line 46, ../../../../../components/sass/modules/_sidebar.scss */
+/* line 50, ../../../../../components/sass/modules/_sidebar.scss */
+aside .aside-top .details .viewsite a:hover {
+  color: #e6e6e6;
+  text-decoration: none;
+}
+/* line 54, ../../../../../components/sass/modules/_sidebar.scss */
+aside .aside-top .details .viewsite a:after {
+  color: #cccccc;
+}
+/* line 60, ../../../../../components/sass/modules/_sidebar.scss */
 aside ul {
   margin-top: 2px;
 }
-/* line 48, ../../../../../components/sass/modules/_sidebar.scss */
+/* line 62, ../../../../../components/sass/modules/_sidebar.scss */
 aside ul li {
   width: 100%;
   background: rgba(0, 0, 0, 0.4);
   margin-bottom: 2px;
   transition: all ease 0.3s;
 }
-/* line 54, ../../../../../components/sass/modules/_sidebar.scss */
+/* line 68, ../../../../../components/sass/modules/_sidebar.scss */
 aside ul li a {
   width: 100%;
   padding: 10px;
   display: block;
+  text-decoration: none;
 }
-/* line 58, ../../../../../components/sass/modules/_sidebar.scss */
+/* line 73, ../../../../../components/sass/modules/_sidebar.scss */
 aside ul li a i {
   margin-left: 10px;
 }
-/* line 62, ../../../../../components/sass/modules/_sidebar.scss */
+/* line 76, ../../../../../components/sass/modules/_sidebar.scss */
+aside ul li a:hover {
+  text-decoration: none;
+}
+/* line 80, ../../../../../components/sass/modules/_sidebar.scss */
 aside ul li:hover {
   background: rgba(0, 0, 0, 0.5);
 }
-/* line 64, ../../../../../components/sass/modules/_sidebar.scss */
+/* line 82, ../../../../../components/sass/modules/_sidebar.scss */
 aside ul li:hover a {
   color: #e6e6e6;
 }
-/* line 68, ../../../../../components/sass/modules/_sidebar.scss */
+/* line 86, ../../../../../components/sass/modules/_sidebar.scss */
 aside ul li.active {
   background: rgba(0, 0, 0, 0.5);
 }
-/* line 70, ../../../../../components/sass/modules/_sidebar.scss */
+/* line 88, ../../../../../components/sass/modules/_sidebar.scss */
 aside ul li.active a {
   color: #e6e6e6;
   cursor: default;
 }
-/* line 75, ../../../../../components/sass/modules/_sidebar.scss */
+/* line 93, ../../../../../components/sass/modules/_sidebar.scss */
 aside ul li small {
   border-bottom: 8px solid transparent;
   border-left: 8px solid #f6f6f6;
