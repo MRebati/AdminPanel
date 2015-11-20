@@ -9,20 +9,21 @@ section.content{
 }//section.content
 
 .box{
+  border-top:4px solid $light;
   background: $light;
   border-radius: 3px;
-  border: 1px solid #efefef;
+  //border: 1px solid #efefef;
   margin-bottom: 15px;
   
   .box-header{
-    padding:10px;
+    padding: 1px 10px 8px;
     &.with-border{
       border-bottom:1px solid #efefef;
-    }
+    }//.box-header .with-border
     .box-title{
       font-size:1em;
       color:#999;
-    }
+    }//.box-title
   }//.box-header
 
   .box-body{
@@ -44,8 +45,22 @@ section.content{
       &:hover{
         color: #666;
         text-decoration: none;
-      }
-    }
+      }//a:hover
+    }//a
+  }//.box-footer
+  &.box-danger{
+    border-top:4px solid $red;
+  }
+  &.box-warning{
+    border-top:4px solid $yellow;
+  }
+
+  &.box-success{
+    border-top:4px solid $green;
+  }
+
+  &.box-info{
+    border-top:4px solid $light-blue;
   }
 }//.box
 

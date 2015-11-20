@@ -1,13 +1,9 @@
 @charset "UTF-8";
+@import url(../../../fonts/IRYekan.ttf);
+@import url(../../../fonts/XTX-FNT-XEROSANS-BLACK.woff);
+@import url(../../../fonts/XTX-FNT-XEROSANS-BOLD.woff);
+@import url(../../../fonts/IRANSans-web.woff);
 @import url(http://fonts.googleapis.com/css?family=Exo+2:400,200,600,800);
-@import url(../../../fonts/IRYekan.ttf);
-@import url(../../../fonts/XTX-FNT-XEROSANS-BLACK.woff);
-@import url(../../../fonts/XTX-FNT-XEROSANS-BOLD.woff);
-@import url(../../../fonts/IRANSans-web.woff);
-@import url(../../../fonts/IRYekan.ttf);
-@import url(../../../fonts/XTX-FNT-XEROSANS-BLACK.woff);
-@import url(../../../fonts/XTX-FNT-XEROSANS-BOLD.woff);
-@import url(../../../fonts/IRANSans-web.woff);
 @import url(../../../fonts/IRYekan.ttf);
 @import url(../../../fonts/XTX-FNT-XEROSANS-BLACK.woff);
 @import url(../../../fonts/XTX-FNT-XEROSANS-BOLD.woff);
@@ -107,6 +103,36 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   font-weight: 200;
   src: local("IRANSans-web"), local("IRANSans-web"), url(../../../fonts/IRANSans-web.woff) format("woff");
 }
+@font-face {
+  font-family: 'segoeui';
+  font-style: normal;
+  font-weight: 200;
+  src: local("segoeui"), local("segoeui"), url(../../../fonts/segoeui.ttf) format("ttf");
+}
+@font-face {
+  font-family: 'XTX-BOLD';
+  font-style: normal;
+  font-weight: 600;
+  src: local("XTX-FNT-XEROSANS-BOLD"), local("XTX-FNT-XEROSANS-BOLD"), url(../../../fonts/XTX-FNT-XEROSANS-BOLD.woff) format("woff");
+}
+@font-face {
+  font-family: 'XTX-BLACK';
+  font-style: normal;
+  font-weight: 800;
+  src: local("XTX-FNT-XEROSANS-BLACK"), local("XTX-FNT-XEROSANS-BLACK"), url(../../../fonts/XTX-FNT-XEROSANS-BLACK.woff) format("woff");
+}
+@font-face {
+  font-family: 'IRYekan';
+  font-style: normal;
+  font-weight: 800;
+  src: local("IRYekan"), local("IRYekan"), url(../../../fonts/IRYekan.ttf) format("ttf");
+}
+@font-face {
+  font-family: 'IRANSans';
+  font-style: normal;
+  font-weight: 200;
+  src: local("IRANSans-web"), local("IRANSans-web"), url(../../../fonts/IRANSans-web.woff) format("woff");
+}
 /* line 21, C:/Ruby22/lib/ruby/gems/2.2.0/gems/susy-2.2.6/sass/susy/language/susy/_box-sizing.scss */
 *, *:before, *:after {
   -moz-box-sizing: border-box;
@@ -117,24 +143,21 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
 /* line 1, ../../../../../components/sass/_base.scss */
 body {
   direction: rtl;
-  font: 200 1em/1.5em "IRYekan", segoeui, tahoma;
-  background: #FFFFFF;
-  color: #000000;
+  font: 400 1em/2em "IRYekan";
 }
 
-/* line 8, ../../../../../components/sass/_base.scss */
+/* line 6, ../../../../../components/sass/_base.scss */
 h1, h2, h3, h4, h5, h6 {
   font: 200 1.5em/1.5em "XTX-BOLD", "XTX-BLACK", segoeui;
-  color: #b4daf6;
   font-weight: 600;
 }
 
-/* line 14, ../../../../../components/sass/_base.scss */
+/* line 11, ../../../../../components/sass/_base.scss */
 strong {
   font-weight: 600;
 }
 
-/* line 18, ../../../../../components/sass/_base.scss */
+/* line 15, ../../../../../components/sass/_base.scss */
 p {
   font-weight: 200;
   padding-bottom: 10px;
@@ -185,36 +208,6 @@ body {
   float: left !important;
 }
 
-@font-face {
-  font-family: 'segoeui';
-  font-style: normal;
-  font-weight: 200;
-  src: local("segoeui"), local("segoeui"), url(../../../fonts/segoeui.ttf) format("ttf");
-}
-@font-face {
-  font-family: 'XTX-BOLD';
-  font-style: normal;
-  font-weight: 600;
-  src: local("XTX-FNT-XEROSANS-BOLD"), local("XTX-FNT-XEROSANS-BOLD"), url(../../../fonts/XTX-FNT-XEROSANS-BOLD.woff) format("woff");
-}
-@font-face {
-  font-family: 'XTX-BLACK';
-  font-style: normal;
-  font-weight: 800;
-  src: local("XTX-FNT-XEROSANS-BLACK"), local("XTX-FNT-XEROSANS-BLACK"), url(../../../fonts/XTX-FNT-XEROSANS-BLACK.woff) format("woff");
-}
-@font-face {
-  font-family: 'IRYekan';
-  font-style: normal;
-  font-weight: 800;
-  src: local("IRYekan"), local("IRYekan"), url(../../../fonts/IRYekan.ttf) format("ttf");
-}
-@font-face {
-  font-family: 'IRANSans';
-  font-style: normal;
-  font-weight: 200;
-  src: local("IRANSans-web"), local("IRANSans-web"), url(../../../fonts/IRANSans-web.woff) format("woff");
-}
 /* line 1, ../../../../../components/sass/modules/_top.scss */
 header {
   float: right;
@@ -228,7 +221,7 @@ header .menu-icon {
   height: 100%;
   width: 40px;
   float: right;
-  color: #FFFFFF;
+  color: #fff;
 }
 /* line 12, ../../../../../components/sass/modules/_top.scss */
 header .menu-icon a {
@@ -236,7 +229,7 @@ header .menu-icon a {
   line-height: 4em;
   padding: 23px 13px;
   height: 100%;
-  color: #FFFFFF;
+  color: #fff;
 }
 /* line 18, ../../../../../components/sass/modules/_top.scss */
 header .menu-icon a:hover {
@@ -261,7 +254,7 @@ header .title {
   font: 400 1em/1.2em "XTX-BOLD", "XTX-BLACK", segoeui;
   font-size: 1.4em;
   padding: 15px;
-  color: #FFFFFF;
+  color: #fff;
 }
 /* line 44, ../../../../../components/sass/modules/_top.scss */
 header .breadcrump {
@@ -275,12 +268,12 @@ header .breadcrump ul {
 /* line 49, ../../../../../components/sass/modules/_top.scss */
 header .breadcrump ul li {
   font: 200 0.8em/1.2em "XTX-BOLD", "XTX-BLACK", segoeui;
-  color: #FFFFFF;
+  color: #fff;
   float: left;
 }
 /* line 53, ../../../../../components/sass/modules/_top.scss */
 header .breadcrump ul li a {
-  color: #FFFFFF;
+  color: #fff;
   text-decoration: none;
   width: 100px;
   padding-right: 10px;
@@ -309,57 +302,73 @@ section.content .row:after {
 
 /* line 11, ../../../../../components/sass/modules/_main.scss */
 .box {
-  background: #FFFFFF;
+  border-top: 4px solid #fff;
+  background: #fff;
   border-radius: 3px;
-  border: 1px solid #efefef;
   margin-bottom: 15px;
 }
-/* line 17, ../../../../../components/sass/modules/_main.scss */
+/* line 18, ../../../../../components/sass/modules/_main.scss */
 .box .box-header {
-  padding: 10px;
+  padding: 1px 10px 8px;
 }
-/* line 19, ../../../../../components/sass/modules/_main.scss */
+/* line 20, ../../../../../components/sass/modules/_main.scss */
 .box .box-header.with-border {
   border-bottom: 1px solid #efefef;
 }
-/* line 22, ../../../../../components/sass/modules/_main.scss */
+/* line 23, ../../../../../components/sass/modules/_main.scss */
 .box .box-header .box-title {
   font-size: 1em;
   color: #999;
 }
-/* line 28, ../../../../../components/sass/modules/_main.scss */
+/* line 29, ../../../../../components/sass/modules/_main.scss */
 .box .box-body {
   font: "XTX-BOLD", "XTX-BLACK", segoeui;
   padding: 10px;
 }
-/* line 31, ../../../../../components/sass/modules/_main.scss */
+/* line 32, ../../../../../components/sass/modules/_main.scss */
 .box .box-body.no-padding {
   padding: 0 !important;
 }
-/* line 36, ../../../../../components/sass/modules/_main.scss */
+/* line 37, ../../../../../components/sass/modules/_main.scss */
 .box .box-footer {
   padding: 10px;
   border-top: 1px solid #efefef;
   font-size: 1em;
   color: #444;
 }
-/* line 41, ../../../../../components/sass/modules/_main.scss */
+/* line 42, ../../../../../components/sass/modules/_main.scss */
 .box .box-footer a {
   color: #444;
   text-decoration: none;
 }
-/* line 44, ../../../../../components/sass/modules/_main.scss */
+/* line 45, ../../../../../components/sass/modules/_main.scss */
 .box .box-footer a:hover {
   color: #666;
   text-decoration: none;
 }
+/* line 51, ../../../../../components/sass/modules/_main.scss */
+.box.box-danger {
+  border-top: 4px solid #FF2D2D;
+}
+/* line 54, ../../../../../components/sass/modules/_main.scss */
+.box.box-warning {
+  border-top: 4px solid #FFA814;
+}
+/* line 58, ../../../../../components/sass/modules/_main.scss */
+.box.box-success {
+  border-top: 4px solid #35FF90;
+}
+/* line 62, ../../../../../components/sass/modules/_main.scss */
+.box.box-info {
+  border-top: 4px solid #14B4FF;
+}
 
-/* line 52, ../../../../../components/sass/modules/_main.scss */
+/* line 67, ../../../../../components/sass/modules/_main.scss */
 .no-padding {
   padding: 0 !important;
 }
 
-/* line 56, ../../../../../components/sass/modules/_main.scss */
+/* line 71, ../../../../../components/sass/modules/_main.scss */
 .text-center {
   text-align: center;
   margin: 0 auto;
@@ -382,7 +391,7 @@ aside i.fa-icon {
 }
 /* line 12, ../../../../../components/sass/modules/_sidebar.scss */
 aside a {
-  color: #FFFFFF;
+  color: #fff;
   text-decoration: none;
 }
 /* line 16, ../../../../../components/sass/modules/_sidebar.scss */
@@ -422,7 +431,7 @@ aside .aside-top .details .username a {
 }
 /* line 41, ../../../../../components/sass/modules/_sidebar.scss */
 aside .aside-top .details .username a:hover {
-  color: #FFFFFF;
+  color: #fff;
   text-decoration: noen;
 }
 /* line 47, ../../../../../components/sass/modules/_sidebar.scss */
@@ -529,7 +538,7 @@ aside.collapse i.fa-icon {
 }
 /* line 134, ../../../../../components/sass/modules/_sidebar.scss */
 aside.collapse a {
-  color: #FFFFFF;
+  color: #fff;
   text-decoration: none;
 }
 /* line 138, ../../../../../components/sass/modules/_sidebar.scss */
@@ -614,36 +623,6 @@ aside.showsidebar {
   z-index: 1 !important;
 }
 
-@font-face {
-  font-family: 'segoeui';
-  font-style: normal;
-  font-weight: 200;
-  src: local("segoeui"), local("segoeui"), url(../../../fonts/segoeui.ttf) format("ttf");
-}
-@font-face {
-  font-family: 'XTX-BOLD';
-  font-style: normal;
-  font-weight: 600;
-  src: local("XTX-FNT-XEROSANS-BOLD"), local("XTX-FNT-XEROSANS-BOLD"), url(../../../fonts/XTX-FNT-XEROSANS-BOLD.woff) format("woff");
-}
-@font-face {
-  font-family: 'XTX-BLACK';
-  font-style: normal;
-  font-weight: 800;
-  src: local("XTX-FNT-XEROSANS-BLACK"), local("XTX-FNT-XEROSANS-BLACK"), url(../../../fonts/XTX-FNT-XEROSANS-BLACK.woff) format("woff");
-}
-@font-face {
-  font-family: 'IRYekan';
-  font-style: normal;
-  font-weight: 800;
-  src: local("IRYekan"), local("IRYekan"), url(../../../fonts/IRYekan.ttf) format("ttf");
-}
-@font-face {
-  font-family: 'IRANSans';
-  font-style: normal;
-  font-weight: 200;
-  src: local("IRANSans-web"), local("IRANSans-web"), url(../../../fonts/IRANSans-web.woff) format("woff");
-}
 /*!
  *  Font Awesome 4.3.0 by @davegandy - http://fontawesome.io - @fontawesome
  *  License - http://fontawesome.io/license (Font: SIL OFL 1.1, CSS: MIT License)

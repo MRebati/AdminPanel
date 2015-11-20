@@ -1,13 +1,10 @@
 body {
   direction: rtl;
   font: $mainFont;
-  background: $backgroundColor;
-  color: $typeDefault;
 }
 
 #{headings()} {
  font: $headFont;
- color: $headColor;
  font-weight: $bold;
 }
 

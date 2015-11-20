@@ -15,18 +15,17 @@
 @import "breakpoint";
 
 //Core Partial
+@import "fonts";
 @import "variables";
 @import "mixins";
 @import "base";
 @import "layout";
-@import "fonts";
 
 //Import Modules
 @import "modules/top";
 @import "modules/main";
 @import "modules/sidebar";
 @import "modules/bottom";
-@import "fonts";
 @import "font-awesome/font-awesome";
 
 //Initializing Susy
