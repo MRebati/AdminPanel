@@ -1,10 +1,11 @@
 aside{
+  display: table-cell;
   white-space: nowrap;
   float:right;
   font: $asideFont;
   background: rgba(0,0,0,0.7);
   height: 100%;
-  width:15%;
+  width:190px;
   i.fa-icon{
       padding-left:5px;
     }//i.fa-icon
@@ -119,8 +120,6 @@ aside{
     }//li
   }//ul
 
-  transition: all ease 0.5s;
-
   &.collapse{
     white-space: nowrap;
     display: block;
@@ -128,7 +127,7 @@ aside{
     font: $asideFont;
     background: rgba(0,0,0,0.7);
     height: 100%;
-    width:5%;
+    width:62px;
     i.fa-icon{
         padding-left:5px;
       }//i.fa-icon
@@ -202,4 +201,9 @@ aside{
       }//li
   }//ul
   }//.colapse
+  &.showsidebar {
+    display: block !important;
+    position: absolute !important;
+    z-index: 1 !important;
+  }//.showsidebar
 }//aside

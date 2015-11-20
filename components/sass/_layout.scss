@@ -5,15 +5,33 @@ body {
   height: 100%;
 }
 
+.wrapper{
+  height:100%
+}
+
 .container{
-  float:left;
-  width:85% !important;
+  display: table-cell !important;
   padding: 0 !important;
-  transition: all ease 0.5s;
+  width: 100%;
 }
 
 .full-width{
-  width: 95% !important;
   display: block;
   transition: all ease 0.5s;
+}
+
+.full{
+  width: 100% !important;
+  display: block;
+  transition: all ease 0.5s;
+}
+
+.closed{
+  position: absolute;
+  right: -190px;
+  transition: all ease 0.5s;
+}
+
+.float-left{
+  float: left !important;
 }

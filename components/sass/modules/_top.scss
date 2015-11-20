@@ -5,10 +5,8 @@ header{
   background: rgba(0,0,0,0.3);
   height:66px;
   .menu-icon{
-    
     height:100%;
     width:40px;
-    
     float:right;
     color:$light;
     a{
@@ -20,9 +18,22 @@ header{
       &:hover{
         background:rgba(0,0,0,0.2);
         color: darken($light,10);
-      }
+      }//a:hover
+    }//a
+  }//.menu-icon
+  
+  #menu-icon-div{
+    @include breakpoint(max-width $narrow){
+      display: none;
     }
   }
+
+  #colapsed-icon-div{
+    @include breakpoint(min-width $narrow){
+      display: none;
+    }
+  }
+
   .title{
     float:right;
     font: $asideFont;
